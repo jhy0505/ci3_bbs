@@ -1,12 +1,11 @@
-<h1>Hello World</h1>
-<a href="main/killIndex">kill index.php 테스트</a>
-<button onclick="test1();">눌러보든가</button>
+<button><a href="member/login">로그인 페이지 이동 버튼</a></button>
+<button onclick="test1();">jQuery 연결 테스트</button>
 <p class="testArea"></p>
 
 <script>
   function test1()
   {
     console.log("눌렸니?");
-    $(".testArea").append("ㅇ 눌림");
+    $(".testArea").append("ㅇ 눌림<br>");
   }
 </script>
