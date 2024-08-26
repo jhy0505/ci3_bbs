@@ -9,8 +9,8 @@
   <link rel="stylesheet" href="/resource/css/common.css">
 
   <!-- js -->
-  <script src="/resource/js/jquery.min.js" type="text/javascript"></script>
-  <script src="/resource/js/common.js" type="text/javascript"></script>
+  <script type="text/javascript" src="/resource/js/jquery.min.js"></script>
+  <script type="text/javascript" src="/resource/js/common.js"></script>
 
 </head>
 <body>
