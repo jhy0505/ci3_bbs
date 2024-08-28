@@ -5,3 +5,8 @@
 a {
   color: yellowgreen;
 }
+
+/* validate error style */
+.error {
+  color: red;
+}

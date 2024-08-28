@@ -10,6 +10,8 @@
 
   <!-- js -->
   <script type="text/javascript" src="/resource/js/jquery.min.js"></script>
+  <script type="text/javascript" src="/resource/js/lib/jquery.validate.min.js"></script>
+
   <script type="text/javascript" src="/resource/js/common.js"></script>
 
 </head>

@@ -25,11 +25,21 @@ class Member extends CI_Controller
   // 회원가입 진행
   public function progressSignUp()
   {
-    var_dump("php - progressSignUp");
+    // var_dump("php - progressSignUp");
     
-    if ($this->input->post()) {
-      var_dump("isset progressSignUp");  
-    } else {
+    if ($this->input->post()) 
+    {
+      // var_dump("isset progressSignUp");
+
+      $memberId = $this->input->post("member_id");
+      $memberPw = $this->input->post("member_pw");
+      $memberName = $this->input->post("member_name");
+      $memberNickname = $this->input->post("member_nickname");
+      $memberEmail = $this->input->post("member_email");
+      $memberMobile = $this->input->post("member_mobile");
+
+    } 
+    else {
       redirect();
     }
   }

@@ -1,6 +1,6 @@
 <h1>회원가입 페이지</h1>
 
-<form action="progressSignUp" method="POST" id="signUpForm" class="signUpForm" onsubmit="return signUpValidation(this);">
+<form action="progressSignUp" method="POST" id="signUpForm" class="signUpForm">
   <div class="idInput">
     <label for="id">아이디</label>
     <input type="text" name="member_id" id="member_id">
