@@ -6,7 +6,30 @@ a {
   color: yellowgreen;
 }
 
+#signUpForm {
+  /* border: 1px solid #000;   */
+}
+
+#signUpForm input {
+  width: 200px;
+  height: 25px;
+}
+
+.input-div {
+  height: 50px;
+  /* border: 1px solid red; */
+}
+
+.input-div2 {
+  display: flex;
+}
+
+.input-label {
+  width: 100px;
+}
+
 /* validate error style */
 .error {
   color: red;
+  font-size: 12px;
 }
