@@ -1,35 +1,82 @@
 *{
-  
+  /*
+  다크모드
+  background-color: #1f1f1f;
+  color: #eee;
+  */
 }
 
 a {
   color: yellowgreen;
 }
 
-#signUpForm {
-  /* border: 1px solid #000;   */
+button {
+  /*
+  다크 모드
+  border: 1px solid #eee;
+  */
+  border: 1px solid #1f1f1f;
 }
 
-#signUpForm input {
-  width: 200px;
-  height: 25px;
+#signUpBox {
+  /* border: 1px solid blue; */
+  margin: 0 auto;
+  width: 400px;
 }
 
-.input-div {
-  height: 50px;
+#signUpBox h1 {
+  text-align: center;
+}
+
+#signUpBox input {
+  padding: 0 10px;
+  width: 250px;
+  height: 30px;
+  border: 1px solid #1f1f1f;
+  /* 다크 모드 border: 1px solid #ddd; */
+  border-radius: 10px;
+}
+
+#signUpBox input::placeholder {
+  color: #aaa;
+  font-size: 12px;
+}
+
+#signUpBox button {
+  margin: 0 10px;
+  width: 100px;
+  height: 40px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  background-color: #eee;
+  color: #1f1f1f;
+  /*
+  다크 모드
+  background-color: #1f1f1f;
+  color: #eee;
+  */
+}
+
+#signUpBox .input-div {
   /* border: 1px solid red; */
+  height: 50px;
 }
 
-.input-div2 {
+#signUpBox .input-div2 {
   display: flex;
 }
 
-.input-label {
-  width: 100px;
+#signUpBox .input-label {
+  width: 150px;
+}
+
+#signUpBox .btn-area {
+  display: flex;
+  justify-content: center;
 }
 
 /* validate error style */
-.error {
-  color: red;
+#signUpBox .error {
+  color: #ff4c4c;
   font-size: 12px;
 }
