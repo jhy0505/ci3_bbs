@@ -10,7 +10,6 @@
           <input 
             id="member_id"
             name="member_id"
-            placeholder="아이디를 입력해주세요."
             type="text">
         </div>
       </div>
@@ -26,7 +25,6 @@
           <input 
             id="member_pw"
             name="member_pw"
-            placeholder="비밀번호를 입력해주세요."
             type="password">
         </div>
       </div>
@@ -42,7 +40,6 @@
           <input 
             id="member_name"
             name="member_name"
-            placeholder="이름을 입력해주세요."
             type="text">
         </div>
       </div>
@@ -58,7 +55,6 @@
           <input
             id="member_nickname"
             name="member_nickname"
-            placeholder="닉네임을 입력해주세요."
             type="text">
         </div>
       </div>
@@ -74,7 +70,6 @@
           <input 
             id="member_email"
             name="member_email"
-            placeholder="이메일을 입력해주세요."
             type="text">
         </div>
       </div>
@@ -89,8 +84,9 @@
         <div class="mobileInput">
           <input 
             id="member_mobile"
+            maxlength="13"
             name="member_mobile"
-            placeholder="휴대폰 번호를 입력해주세요."
+            onkeyup="addHyphen(this);"
             type="text">
         </div>
       </div>

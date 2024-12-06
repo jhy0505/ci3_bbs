@@ -15,3 +15,12 @@ function redirect($url = "")
 
   exit;
 }
+
+function xmp_print($content)
+{
+  $style = "font-size: 14px; font-weight: bold;";
+
+  echo "<xmp style='$style'>";
+  print_r($content);
+  echo "</xmp>";
+}

@@ -26,6 +26,8 @@ class Member extends CI_Controller
   public function progressSignUp()
   {
     // var_dump("php - progressSignUp");
+
+    // xmp_print($this->input->post());
     
     if ($this->input->post()) 
     {

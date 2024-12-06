@@ -13,6 +13,7 @@
   <script type="text/javascript" src="/resource/js/lib/jquery.validate.min.js"></script>
 
   <script type="text/javascript" src="/resource/js/common.js"></script>
+  <script type="text/javascript" src="/resource/js/custom.validate.js"></script>
 
 </head>
 <body>
