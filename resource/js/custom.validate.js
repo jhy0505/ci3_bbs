@@ -4,6 +4,29 @@ $(function () {
   $.validator.addMethod("checkDuplicateId", function(value) {
     // Debug
     console.log("checkDuplicateId 호출", value);
+
+    let data = {
+      memberId: $("#member_id").val(),
+    }
+
+    $.ajax({
+      type: "POST",
+      url : "/memberAjax/checkDuplicateId",
+      data: data,
+      dataType: "JSON",
+      success: function(result) {
+        console.log(result);
+        return false;
+      },
+      error: function(request, status, error) {
+        console.log(request);
+        console.log(status);
+        console.log(error);
+        return false;
+      }
+    });
+
+    return false;
   });
 
   // 닉네임 금지 단어 검증
