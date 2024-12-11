@@ -7,6 +7,7 @@ class MemberAjax extends CI_Controller
   {
     parent::__construct();
     $this->load->helper(array("function"));
+    $this->load->model(array("Member_model"));
   }
 
   public function checkDuplicateId()
@@ -17,6 +18,7 @@ class MemberAjax extends CI_Controller
     $memberId = $this->input->post("memberId");
 
     // TODO: model과 연결해, 아이디 중복 검사 함수 제작
+    $test = $this->Member_model->test_model();
 
     return false;
   }
