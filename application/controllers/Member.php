@@ -40,6 +40,19 @@ class Member extends CI_Controller
       $memberEmail = $this->input->post("member_email");
       $memberMobile = $this->input->post("member_mobile");
 
+      // 랜덤 코드 생성
+      $randomCode = generateRandomCode(10, false);
+      // log_message("error", $randomCode);
+
+      $insertData = array(
+        "member_code"     => $randomCode,
+        "member_id"       => $memberId,
+        "member_pw"       => $memberPw,
+        "member_nickname" => $memberNickname,
+        "member_email"    => $memberEmail,
+        "member_mobile"   => $memberMobile,
+      );
+
     } 
     else {
       redirect();
