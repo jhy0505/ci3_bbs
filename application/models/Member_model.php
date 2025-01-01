@@ -32,6 +32,10 @@ class Member_model extends CI_Model
   // 멤버 추가
   public function insertMember($data)
   {
-    // $this->db->insert('table_name', $data);
+    $this->db->insert('members', $data);
+
+    log_message("error", print_r($this->db->last_query(), true));
+
+    return $this->db->insert_id();
   }
 }

@@ -57,7 +57,7 @@ $(function () {
     rules: {
       member_id: {
         required: true,
-        checkDuplicateId: true,
+        // checkDuplicateId: true,
       },
       member_pw: {
         required: true,
@@ -70,7 +70,7 @@ $(function () {
       },
       member_email: {
         required: true,
-        checkEmail: true,
+        // checkEmail: true,
       },
       member_mobile: {
         required: true,

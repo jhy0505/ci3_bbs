@@ -1,6 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
+// 페이지 이동 (브라우저 기록 남지 않음)
 function redirect($url = "")
 {
   if ($url === "") {
@@ -14,6 +15,50 @@ function redirect($url = "")
   ";
 
   exit;
+}
+
+// 페이지 이동 (브라우저 기록 남음)
+function href($url = "")
+{
+  if ($url === "") {
+    $url = "/";
+  }
+
+  echo "
+    <script type='text/javascript'>
+      window.location.href('$url');
+    </script>
+  ";
+}
+
+// alert 후 redirect
+function alertAndRedirect($msg, $url = "")
+{
+  if ($url === "") {
+    $url = "/";
+  }
+
+  echo "
+    <script type='text/javascript'>
+      alert('$msg');
+      window.location.replace('$url');
+    </script>
+  ";
+}
+
+// alert 후 href
+function alertAndHref($msg, $url = "")
+{
+  if ($url === "") {
+    $url = "/";
+  }
+
+  echo "
+    <script type='text/javascript'>
+      alert('$msg');
+      window.location.href = '$url';
+    </script>
+  ";
 }
 
 // print_r + <xmp>
